@@ -19,9 +19,9 @@ body {
  	<%@include file="component/navbar.jsp"%>
  	<div class="card" style="width: 18rem;">
   <div class="card-body">
-    <h5 class="card-title">Name:Prince Rathore</h5>
-    <h5 class="card-title">Ph no:9907685180</h5>
-    <h5 class="card-title">Email:princerathore8595@gmail.com</h5>
+    <h5 class="card-title">Name:john</h5>
+    <h5 class="card-title">Ph no:xxxxxxxx</h5>
+    <h5 class="card-title">Email:john@gmail.com</h5>
     <h5 class="card-title">About:Software Developer</h5>
     <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6> -->
     <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->

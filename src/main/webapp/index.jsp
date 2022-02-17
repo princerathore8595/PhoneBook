@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Home</title>
 <%@include file="component/allCss.jsp"%>
 <style type="text/css">
 body {
@@ -28,7 +28,7 @@ body {
 	<div class="container-fluid text-light heading">
 		<h1>Welcome to Phonebook App</h1>
 		<h4 >PhoneBook is an easy, safe and powerful contact management
-			platform that is designed to manage, organize and share contacts</h4>
+			platform that is designed to manage and organize contacts</h4>
 	</div>
 	<div style="margin-top:auto">
 		<%@include file="component/footer.jsp"%>

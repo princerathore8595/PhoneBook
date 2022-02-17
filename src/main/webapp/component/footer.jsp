@@ -1,9 +1,9 @@
 <!-- Footer -->
-<footer class="page-footer font-small bg-warning mt-5">
+<footer class="page-footer font-small bg-dark mt-5">
 
   <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  <div class="footer-copyright text-center text-light py-3">
+    Developed & Designed by Group G-24
   </div>
   <!-- Copyright -->
 

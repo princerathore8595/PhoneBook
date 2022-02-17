@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>PhoneBook App</title>
+<title>Add Contact</title>
 <%@include file="component/allCss.jsp"%>
 <style type="text/css">
 body {
