@@ -26,9 +26,9 @@ body {
 						<form>
 
 							<div class="form-group">
-								<label for="exampleInputEmail1">Enter Name</label> <input
-									type="text" class="form-control" id="exampleInputEmail1"
-									aria-describedby="emailHelp">
+								<label for="exampleInputName">Enter Name</label> <input
+									type="text" class="form-control" id="exampleInputName"
+									aria-describedby="nameHelp">
 
 							</div>
 							<div class="form-group">
@@ -38,8 +38,8 @@ body {
 
 							</div>
 							<div class="form-group">
-								<label for="exampleInputPassword1">Enter Phone No.</label> <input
-									type="password" class="form-control" id="exampleInputPassword1">
+								<label for="exampleInputPhone">Enter Phone No.</label> <input
+									type="text" class="form-control" id="exampleInputPhone">
 							</div>
 
 							<div class="form-group">

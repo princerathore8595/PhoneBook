@@ -26,9 +26,9 @@ body {
 						<h4 class="text-center text-success">Registration Page</h4>
 						<form>
 							<div class="form-group">
-								<label for="exampleInputEmail1">Enter Name</label> <input
-									type="text" class="form-control" id="exampleInputEmail1"
-									aria-describedby="emailHelp">
+								<label for="exampleInputName">Enter Name</label> <input
+									type="text" class="form-control" id="exampleInputName"
+									aria-describedby="nameHelp">
 
 							</div>
 
