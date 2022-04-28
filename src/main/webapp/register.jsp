@@ -24,23 +24,43 @@ body {
 				<div class="card">
 					<div class="card-body">
 						<h4 class="text-center text-success">Registration Page</h4>
-						<form>
+						
+						<% 
+						String sucssMsg = (String) session.getAttribute("sucssMsg");
+						String errorMsg = (String) session.getAttribute("errorMsg");
+						
+						if(sucssMsg != null) {
+						%>
+						<p class = "text-success text-center"><%=sucssMsg %></p>
+						<%
+						session.removeAttribute("sucssMsg");
+						}
+						if(errorMsg != null) {
+						%>
+						<p class="text-danger text-center"><%=errorMsg %><p>
+						<%
+						session.removeAttribute("errorMsg");
+						}%>
+						
+						
+						
+						<form action="register" method="post">
 							<div class="form-group">
 								<label for="exampleInputName">Enter Name</label> <input
-									type="text" class="form-control" id="exampleInputName"
+									name="name" type="text" class="form-control" id="exampleInputName"
 									aria-describedby="nameHelp">
 
 							</div>
 
 							<div class="form-group">
 								<label for="exampleInputEmail1">Email address</label> <input
-									type="email" class="form-control" id="exampleInputEmail1"
+									name="email" type="email" class="form-control" id="exampleInputEmail1"
 									aria-describedby="emailHelp">
 
 							</div>
 							<div class="form-group">
 								<label for="exampleInputPassword1">Password</label> <input
-									type="password" class="form-control" id="exampleInputPassword1">
+									name="password" type="password" class="form-control" id="exampleInputPassword1">
 							</div>
 							<div class="text-center mt-2">
 								<button type="submit" class="btn btn-primary">Register</button>

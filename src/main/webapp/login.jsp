@@ -23,16 +23,37 @@ body {
 				<div class="card">
 					<div class="card-body">
 						<h4 class="text-center text-success">Login Page</h4>
-						<form>
+						
+						<%
+						String invalidMsg = (String) session.getAttribute("invalidMsg");
+						if(invalidMsg != null) {
+						%>
+						<p class="text-danger text-center"><%=invalidMsg %></p>
+                        <%
+                        session.removeAttribute("invalidMsg");
+						}
+						%>
+						
+						<%
+						String logMsg = (String) session.getAttribute("logMsg");
+						if(logMsg != null) {
+						%>
+						<p class="text-success text-center"><%=logMsg %></p>
+                        <%
+                        session.removeAttribute("logMsg");
+						}
+						%>
+						
+						<form action="login" method="post">
 							<div class="form-group">
 								<label for="exampleInputEmail1">Email address</label> <input
-									type="email" class="form-control" id="exampleInputEmail1"
+									name="email" type="email" class="form-control" id="exampleInputEmail1"
 									aria-describedby="emailHelp">
 
 							</div>
 							<div class="form-group">
 								<label for="exampleInputPassword1">Password</label> <input
-									type="password" class="form-control" id="exampleInputPassword1">
+									name="password" type="password" class="form-control" id="exampleInputPassword1">
 							</div>
 							<div class="text-center mt-2">
 								<button type="submit" class="btn btn-primary">Login</button>

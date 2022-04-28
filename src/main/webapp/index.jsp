@@ -9,28 +9,31 @@
 <style type="text/css">
 body {
 	background-color: #192039;
-	display:flex;
-	flex-direction:column;
-	height:100vh;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
 }
 
-.heading{
-  height:100%;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
+.heading {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 </style>
 </head>
 <body>
 	<%@include file="component/navbar.jsp"%>
+	
+
+	
 	<div class="container-fluid text-light heading">
 		<h1>Welcome to Phonebook App</h1>
-		<h4 >PhoneBook is an easy, safe and powerful contact management
+		<h4>PhoneBook is an easy, safe and powerful contact management
 			platform that is designed to manage and organize contacts</h4>
 	</div>
-	<div style="margin-top:auto">
+	<div style="margin-top: auto">
 		<%@include file="component/footer.jsp"%>
 	</div>
 </body>

@@ -2,6 +2,9 @@ package com.conn;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 
 public class DbConnect {
 
@@ -10,12 +13,10 @@ public class DbConnect {
 	public static Connection getConn() {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/phnbook","root","password");
-		} catch(Exception e) {
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/phonebook", "root", "password");
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		return conn;
 	}
 }
-
-
